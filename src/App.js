@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
 	return (
 		<div className="App">
-			<div className="App-header">
-				<h1>Amazon Cart</h1>
-			</div>
+			<Header />
 		</div>
 	);
 }
