@@ -1,6 +1,14 @@
+body {
+  background-color: #eaeded;
+}
+
 .App {
   text-align: center;
 }
 
+.App-main {
+  display: flex;
+  padding: 14px, 18px, 0 ,18px;
+}
 
 
