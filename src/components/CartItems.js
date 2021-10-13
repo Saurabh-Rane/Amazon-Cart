@@ -9,13 +9,24 @@ function CartItems({ items, setCartItems }) {
 		setCartItems(newItems);
 	};
 
+	const deleteItem = (indextoDelete) => {
+		const newItems = items.filter((value, index) => index !== indextoDelete);
+		setCartItems(newItems);
+	};
+
 	return (
 		<div className="CartItems">
 			<h1>Shopping Cart</h1>
 			<hr />
 			<div className="CartItems-items">
 				{items.map((item, index) => (
-					<CartItem index={index} item={item} key={index} changeItemQuantity={changeItemQuantity} />
+					<CartItem
+						index={index}
+						item={item}
+						key={index}
+						changeItemQuantity={changeItemQuantity}
+						deleteItem={deleteItem}
+					/>
 				))}
 			</div>
 		</div>
